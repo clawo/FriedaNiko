@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- CSS einbinden -->
-  <link rel="stylesheet" href="styleHeader.css" />
+  <link rel="stylesheet" href="../style/styleHeader.css" />
 
 
 </head>
