@@ -219,6 +219,50 @@
     </div>
   </div>
 </section>
+<!-- RSVP SECTION START -->
+<section class="rsvp-section">
+  <div class="faq-background-box"></div>
+  <div class="rsvp-inner">
+
+    <div class="rsvp-title">Rsvp</div>
+
+    <div class="rsvp-columns">
+      <div class="rsvp-box-left">
+        <h3>Wann braucht ihr meine Rückmeldung?</h3>
+        <p>
+          UM UNSERE HOCHZEIT BESTMÖGLICH PLANEN ZU KÖNNEN UND ALLEN DIENSTLEISTERN RECHTZEITIG VERBINDLICHE INFORMATIONEN GEBEN ZU KÖNNEN, BITTEN WIR EUCH, UNS SO FRÜH WIE MÖGLICH BESCHEID ZU GEBEN, OB IHR DABEI SEIN KÖNNT.
+        </p>
+        <p>
+          WIR BENÖTIGEN EURE ZU- ODER ABSAGE DAHER <strong>BIS ZUM 01. SEPTEMBER 2025.</strong>
+        </p>
+      </div>
+      <div class="rsvp-box-right">
+        <p>WIR FREUEN UNS WENN IHR UNS BEI EURER RÜCKMELDUNG FOLGENDE INFOS MITGEBT:</p>
+        <ul>
+          <li>1. ERNÄHRUNGSPRÄFERENZEN – KEINE, VEGETARISCH, VEGAN</li>
+          <li>2. ALLERGIEN ODER UNVERTRÄGLICHKEITEN – FALLS VORHANDEN</li>
+          <li>GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rsvp-wunschbox">
+      <h4>Musikwunsch <span>für die Party!*</span></h4>
+      <form>
+        <label>Song:</label>
+        <input type="text" name="song" />
+        <label>Artist:</label>
+        <input type="text" name="artist" />
+        <p class="note">*Pro Gast ein Lied</p>
+      </form>
+    </div>
+
+    <p class="rsvp-footer-text">
+      EINE KURZE NACHRICHT PER WHATSAPP REICHT VÖLLIG AUS. WIR FREUEN UNS AUF EURE ANTWORTEN!
+    </p>
+  </div>
+</section>
+<!-- RSVP SECTION END -->
 
 
 </body>
