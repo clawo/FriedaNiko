@@ -1,0 +1,295 @@
+:root {
+    --primary-color: #003E6C;
+    --background-color: #F8F7F5;
+    --primary-light: #1a4f80;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .image-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .image-row img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vw;
+    color: var(--background-color);
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+    white-space: nowrap;
+  }
+  
+  .date-text {
+    background-color: var(--background-color);
+    padding: 20px 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  /* Location Section */
+  .location-section {
+    background-color: var(--primary-light);
+    color: #F8F7F5;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .location-heading {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  
+  .location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    border: 1px solid #F8F7F5;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--primary-light);
+  }
+  
+  .location-dates,
+  .location-address {
+    flex: 1 1 300px;
+  }
+  
+  .date-large {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .bis-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #F8F7F5;
+  }
+  
+  .location-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #F8F7F5;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .location-address a {
+    text-decoration: none;
+    color: #F8F7F5;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .location-address a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Anreise Section */
+  .anreise-section {
+  background: linear-gradient(to bottom,
+    #1a4f80 50%, 0%,
+    #1a4f80 50%,
+    #003E6C 50%,   /* obere Hälfte = dunkelblau */
+    #003E6C 100%
+  );
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+}
+  
+  
+  .anreise-dunkelblau {
+    background-color: #003E6C;
+    padding: 45% 0%;
+    color: white;
+    width: 100%;
+    margin-top: 10%;
+  }
+  
+  
+  .anreise-wrapper {
+    max-width: 100%;
+    margin: 2% auto;
+  }
+  
+  .anreise-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: -50%;
+  }
+  
+  .karte-hintergrund {
+    background-image: url('../Images/fliesen.png');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-light);
+    flex: 1 1 50%;
+    max-width: 50%;
+    min-height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .karte-box {
+    background-color: #0F355E;
+    padding: 20px;
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    border: 4px solid #003E6C;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+  
+  .karte-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .koordinaten-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #D4E2FF;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .koordinaten-link:hover {
+    text-decoration: underline;
+  }
+  
+  .anreise-image {
+    flex: 1 1 50%;
+    max-width: 50%;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding-left: 1%;
+    padding-top: 3%;
+  }
+  
+  .anreise-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  .anreise-info {
+    text-align: center;
+  }
+  
+  .anreise-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .anreise-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .anreise-details {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .anreise-block {
+    text-align: left;
+    max-width: 300px;
+  }
+  
+  .anreise-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .anreise-block ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .anreise-pdf-hinweis {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .location-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .location-dates,
+    .location-address {
+      text-align: center;
+    }
+  
+    .anreise-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .karte-hintergrund,
+    .anreise-image {
+      max-width: 100%;
+      min-height: unset;
+    }
+  
+    .anreise-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .anreise-block {
+      text-align: center;
+    }
+  }
+  
