@@ -131,7 +131,7 @@
  
 .anreise-hellblau {
     background: linear-gradient(to bottom,
-    #1a4f80 40.8%, 0%,
+    #1a4f80 42.2%, 0%,
     #003E6C 100%
   );
     color: white;
@@ -141,9 +141,10 @@
   
   .anreise-dunkelblau {
     background-color: #003E6C;
-    padding: 3% 5%;
+    padding: 0% 5%;
     color: white;
     width: 100%;
+    margin-bottom: 10%;
   }
   
   
@@ -272,6 +273,8 @@
   .anreise-pdf-hinweis {
     font-size: 0.9rem;
     margin-top: 10px;
+    text-align: left;
+    padding-left: 23%;
   }
 
   .pdf-link {
@@ -319,4 +322,204 @@
       text-align: center;
     }
   }
+  
+  .unterkunft-section {
+    background-color: var(--background-color); /* #F8F7F5 */
+    padding-top: 120px; /* Platz für das Bild, das in Anreise reinragt */
+    padding-bottom: 60px;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .unterkunft-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .unterkunft-bild-wrapper {
+    position: absolute;
+    top: -47%; /* schiebt das Bild nach oben in die Anreise-Section */
+    right: 0;
+    width: 48%;
+    z-index: 2;
+  }
+  
+  .unterkunft-bild {
+    width: 100%;
+    border-radius: 100px;
+  }
+  
+  .unterkunft-inhalt {
+    margin-top: -5%;
+    text-align: left;
+    color: var(--primary-color);
+    padding-left: 7%;
+  }
+  
+  .unterkunft-titel {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 10px;
+    
+  }
+  
+  .unterkunft-box {
+    padding: 30px;
+    margin: 0 -3% 3%;
+    max-width: 700px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  .unterkunft-box p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .unterkunft-text {
+    text-align: left;
+    max-width: 850px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .unterkunft-bild-wrapper {
+      position: static;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .unterkunft-bild {
+      border-radius: 30px;
+    }
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    position: relative;
+    background-color: var(--background-color);
+    padding: 60px 5%;
+    overflow: hidden;
+  }
+  
+
+  .faq-title {
+    font-size: 13rem;
+    font-weight: 800;
+    background: url('../Images/fliesen.png') no-repeat center center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .faq-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .accordion {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .accordion-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+
+  .accordion-button::after {
+    content: '\25BE';
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+  }
+
+  .accordion-button.active::after {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: white;
+    transition: max-height 0.3s ease;
+  }
+
+  .accordion-content.open {
+    padding: 20px;
+  }
+
+  .color-palette {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  .faq-background-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url('../Images/fliesen.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    z-index: 1;
+    margin-right: 5%;
+  }
+  .faq-info h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #F8F7F5;
+  }
+
+  .faq-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #F8F7F5;
+  }
+  
+  
   

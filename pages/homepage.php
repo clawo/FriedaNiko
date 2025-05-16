@@ -124,8 +124,103 @@
   </div>
 </section>
 
+<section class="unterkunft-section">
+  <div class="unterkunft-wrapper">
 
- 
+    <div class="unterkunft-bild-wrapper">
+    <img src="../Images/Unterkunft.png" alt="Zimmer mit Bett in Mas Huix" class="unterkunft-bild" />
+    </div>
+
+    <div class="unterkunft-inhalt">
+      <h2 class="unterkunft-titel">Schlafplätze vor Ort</h2>
+      <div class="unterkunft-box">
+        <p>
+          UNSERE HOCHZEITSLOCATION STEHT UNS FÜR 3 NÄCHTE ZUR VERFÜGUNG, <strong>VOM 01.06.2026 BIS ZUM 04.06.2026</strong>.
+        </p>
+        <p>CHECK-IN: AM 01.06.2026, UM 18:00 UHR</p>
+        <p>CHECK-OUT: AM 04.06.2026, UM 08:00 UHR</p>
+      </div>
+
+      <div class="unterkunft-text">
+        <p>
+          DAMIT ALLE VON EUCH MIT UNS FEIERN KÖNNEN, HABEN WIR UNS ENTSCHIEDEN, DIE KOSTEN FÜR DIE UNTERKUNFT NICHT FEST ZU BERECHNEN, SONDERN AUF FREIWILLIGER BASIS ANZUBIETEN.
+        </p>
+        <p><strong>ALS GROBE ORIENTIERUNG: DIE DREI ÜBERNACHTUNGEN KOSTEN UNS ETWA 185 € PRO GAST.</strong></p>
+        <p>
+          DAS IST NATÜRLICH KEIN PFLICHTBETRAG, SONDERN EINFACH EIN RICHTWERT. WENN IHR UNS UNTERSTÜTZEN MÖCHTET, ABER NICHT GENAU WISST, WIE VIEL – FÜHLT EUCH BITTE VÖLLIG FREI, DAS ZU GEBEN, WAS FÜR EUCH MACHBAR IST. AUCH EIN KLEINERER BEITRAG IST ABSOLUT WILLKOMMEN.
+        </p>
+        <p><strong>FÜR UNS ZÄHLT VOR ALLEM, DASS IHR MIT UNS FEIERT!</strong></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION: FAQ -->
+<!-- FAQ Section -->
+<section class="faq-section">
+  <div class="faq-background-box"></div>
+  <div class="faq-content">
+    <h2 class="faq-title">FAQ</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-button">DRESSCODE?</button>
+        <div class="accordion-content">
+          <p>WIR FREUEN UNS SEHR, UNSERE FAMILIE UND FREUNDE AN UNSEREM GROSSEN TAG FESTLICH GEKLEIDET ZU SEHEN.</p>
+          <p>DA UNSERE FEIER DRAUSSEN STATTFINDET, WÜNSCHEN WIR UNS EINEN SOMMERLICH-FESTLICHEN DRESSCODE – SCHICK, ABER DEM WETTER UND DER ENTSPANNTEN ATMOSPHÄRE ENTSPRECHEND. BITTE VERMEIDET ALL-WHITE ODER ALL-BLACK OUTFITS.</p>
+          <p>WENN IHR EUCH FARBLICH INSPIRIEREN LASSEN MÖCHTET:</p>
+          <div class="color-palette">
+            <span class="swatch" style="background:#C4D6B0"></span>
+            <span class="swatch" style="background:#1F4662"></span>
+            <span class="swatch" style="background:#26557A"></span>
+            <span class="swatch" style="background:#5A85B4"></span>
+            <span class="swatch" style="background:#C9D5E2"></span>
+            <span class="swatch" style="background:#FDF0AE"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">AB WANN KANN ICH ANREISEN?</button>
+        <div class="accordion-content">
+          <p>IHR KÖNNT GERNE BEREITS EINEN TAG VORHER, AM 01.06.2026, ANREISEN. DIE CHECK-IN-ZEIT IN DER LOCATION IST AB 18:00 UHR.</p>
+          <p>ALTERNATIV KÖNNT IHR AUCH AM HOCHZEITSTAG SELBST ANREISEN – FALLS IHR ERST AM 02.06.2026 IN DER ANREISEN MÖCHTET, SAGT UNS BITTE VORHER BESCHEID.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">DETAILS ZUM ABEND DAVOR</button>
+        <div class="accordion-content">
+          <p>INFOS FOLGEN!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">02. JUNI 2026</button>
+        <div class="accordion-content">
+          <p>INFOS FOLGEN!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">GASTGESCHENKE?</button>
+        <div class="accordion-content">
+          <p>NEIN! ES BEDEUTET UNS SEHR VIEL, DASS IHR UNSEREN TAG MIT UNS FEIERT… EURE ANWESENHEIT IST DAS GRÖßTE GESCHENK!</p>
+          <p>WER UNS TROTZDEM EINE FREUDE MACHEN MÖCHTE, DARF SICH GERN FREIWILLIG AN DER UNTERKUNFT BETEILIGEN.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-background-box">
+    <div class="faq-info">
+      <h3>Alternative Unterkunft</h3>
+      <p>FALLS IHR LIEBER EXTERN ÜBERNACHTEN MÖCHTET, GEBT UNS BITTE RECHTZEITIG BESCHEID, DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.</p>
+    </div>
+  </div>
+</section>
+
 
 </body>
+<script src="../Includes/functions.js"></script>
 </html>
