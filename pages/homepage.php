@@ -114,8 +114,11 @@
         </div>
 
         <p class="anreise-pdf-hinweis">
-          Alle Details findet ihr in der PDF mit den Anreiseinfos.
-        </p>
+  Alle Details findet ihr in der
+  <a href="../PDF/Informationen zur Anreise.pdf" target="_blank" class="pdf-link">
+    PDF mit den Anreiseinfos
+  </a>.
+</p>
       </div>
     </div>
   </div>

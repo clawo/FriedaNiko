@@ -264,6 +264,19 @@
     font-size: 0.9rem;
     margin-top: 10px;
   }
+
+  .pdf-link {
+    color: #D4E2FF;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .pdf-link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
   
   /* Responsive */
   @media (max-width: 768px) {
