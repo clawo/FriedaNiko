@@ -243,7 +243,7 @@
         <p>GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
       </div>
     </div>
-
+</section>
     <section class="musik-section">
   <div class="musik-wrapper">
     <div class="musik-box-outer">
