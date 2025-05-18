@@ -8,6 +8,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500&display=swap" rel="stylesheet" />
 
+
   <!-- CSS -->
   <link rel="stylesheet" href="style/styleHeader.css" />
   <link rel="stylesheet" href="../style/styleHomepage.css"/>
@@ -159,7 +160,13 @@
 <!-- SECTION: FAQ -->
 <!-- FAQ Section -->
 <section class="faq-section">
-  <div class="faq-background-box"></div>
+  <div class="faq-background-box">
+    <div class="faq-info">
+      <h3>Alternative Unterkunft</h3>
+      <p>FALLS IHR LIEBER EXTERN ÜBERNACHTEN MÖCHTET, GEBT UNS BITTE RECHTZEITIG BESCHEID, DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.</p>
+    </div>
+  </div>
+
   <div class="faq-content">
     <h2 class="faq-title">FAQ</h2>
     <div class="accordion">
@@ -179,7 +186,6 @@
           </div>
         </div>
       </div>
-
       <div class="accordion-item">
         <button class="accordion-button">AB WANN KANN ICH ANREISEN?</button>
         <div class="accordion-content">
@@ -187,21 +193,18 @@
           <p>ALTERNATIV KÖNNT IHR AUCH AM HOCHZEITSTAG SELBST ANREISEN – FALLS IHR ERST AM 02.06.2026 IN DER ANREISEN MÖCHTET, SAGT UNS BITTE VORHER BESCHEID.</p>
         </div>
       </div>
-
       <div class="accordion-item">
         <button class="accordion-button">DETAILS ZUM ABEND DAVOR</button>
         <div class="accordion-content">
           <p>INFOS FOLGEN!</p>
         </div>
       </div>
-
       <div class="accordion-item">
         <button class="accordion-button">02. JUNI 2026</button>
         <div class="accordion-content">
           <p>INFOS FOLGEN!</p>
         </div>
       </div>
-
       <div class="accordion-item">
         <button class="accordion-button">GASTGESCHENKE?</button>
         <div class="accordion-content">
@@ -211,15 +214,8 @@
       </div>
     </div>
   </div>
-
-  <div class="faq-background-box">
-    <div class="faq-info">
-      <h3>Alternative Unterkunft</h3>
-      <p>FALLS IHR LIEBER EXTERN ÜBERNACHTEN MÖCHTET, GEBT UNS BITTE RECHTZEITIG BESCHEID, DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.</p>
-    </div>
-  </div>
 </section>
-<!-- RSVP SECTION START -->
+
 <section id="rsvp">
   <div class="rsvp-container">
     <h2 class="rsvp-title">Rsvp</h2>
