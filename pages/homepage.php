@@ -168,7 +168,6 @@
         DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.
       </p>
     </div>
-    <div class="faq-rsvp-heading">RSVP</div>
   </div>
 
   <div class="faq-content">
@@ -223,38 +222,53 @@
 <section id="rsvp">
 <div class="rsvp-banner">
   <div class="rsvp-banner-inner">
-    <h2>Rsvp</h2>
+    <div class="rsvp-banner-blue">
+      <h2>Rsvp</h2>
+    </div>
   </div>
 </div>
-    <div class="rsvp-info">
-      <p>Wir freuen uns, wenn ihr uns bei eurer Rückmeldung folgende Infos mitgebt:</p>
-      <ol>
-        <li>Ernährungspräferenzen – keine, vegetarisch, vegan</li>
-        <li>Allergien oder Unverträglichkeiten – falls vorhanden</li>
-      </ol>
-      <p>Ggf. Unterkunft – freiwilligen Beitrag</p>
+<div class="rsvp-content-wrapper">
+  <div class="rsvp-info-box">
+    <h3 class="rsvp-column h3">Wann braucht ihr meine Rückmeldung?</h3>
+    <p>Um unsere Hochzeit bestmöglich planen zu können und allen Dienstleistern rechtzeitig verbindliche Informationen geben zu können, bitten wir euch, uns so früh wie möglich Bescheid zu geben, ob ihr dabei sein könnt.</p>
+    <br>
+    <p>Wir benötigen eure Zu- oder Absage daher bis zum <strong> 01. September 2025.</strong> </p>
+      
+      </div>
+      <div class="rsvp-right-box">
+        <p>WIR FREUEN UNS WENN IHR UNS BEI EURER RÜCKMELDUNG FOLGENDE INFOS MITGEBT:</p>
+          <p>1. ERNÄHRUNGSPRÄFERENZEN – KEINE, VEGETARISCH, VEGAN
+            2. ALLERGIEN ODER UNVERTRÄGLICHKEITEN – FALLS VORHANDEN</p>
+          
+        <p>GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
+      </div>
     </div>
 
-    <div class="rsvp-music-box">
-      <h3>Musikwunsch</h3>
-      <p>Für die Party!*</p>
-      <form>
-        <label for="song">Song:</label><br>
-        <input type="text" id="song" name="song"><br>
-        <label for="artist">Artist:</label><br>
-        <input type="text" id="artist" name="artist">
-      </form>
-      <p class="note">*Pro Gast ein Lied</p>
-    </div>
+    <section class="musik-section">
+  <div class="musik-wrapper">
+    <div class="musik-box-outer">
+      <div class="musik-box-inner">
+        <h2 class="musik-title">Musikwunsch</h2>
+        <p class="musik-subtitle">FÜR DIE PARTY!*</p>
 
-    <p class="rsvp-footer">
-      Eine kurze Nachricht per WhatsApp reicht völlig aus. Wir freuen uns auf eure Antworten!
-    </p>
+        <form action="musikwunsch.php" method="POST">
+          <label for="song">Song:</label><br>
+          <input type="text" id="song" name="song" required><br>
+          <label for="artist">Artist:</label><br>
+          <input type="text" id="artist" name="artist" required><br>
+          <p class="musik-note">*Pro Gast ein Lied</p>
+          <button type="submit">Abschicken</button>
+        </form>
+
+        <?php if (isset($_GET['success'])): ?>
+          <p style="color: green; margin-top: 1rem;">Vielen Dank für deinen Musikwunsch!</p>
+        <?php endif; ?>
+      </div>
+    </div>
   </div>
 </section>
 
 
-<!-- RSVP SECTION END -->
 
 
 </body>

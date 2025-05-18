@@ -543,7 +543,7 @@
 
 /* === RSVP SECTION === */
 #rsvp {
-  background-color: #2a4d6f;
+  background-color: #1a4f80;
   color: white;
   padding: 8rem 5% 3rem;
   font-family: 'Quicksand', sans-serif;
@@ -590,12 +590,12 @@
 }
 
 .rsvp-column {
-  flex: 1 1 400px;
-  background-color: #123456;
+  background-color: #003E6C;
   border-radius: 1rem;
-  padding: 2rem;
-  font-size: 0.95rem;
+  padding: 0rem;
+  font-size: 3rem;
   line-height: 1.6;
+  font-family: 'Great Vibes', cursive;
 }
 
 .rsvp-column h3 {
@@ -605,67 +605,84 @@
   text-align: center;
 }
 
-.rsvp-info-column {
-  flex: 1 1 400px;
-  padding: 2rem;
+.rsvp-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.rsvp-info-column ol {
-  padding-left: 1.2rem;
-}
-
-.rsvp-music-box {
-  background-color: white;
-  color: #123456;
+.rsvp-info-box {
+  width: 40%;
+  background-color: #003E6C; 
+  padding: 2rem 3rem 2.5rem;
   border-radius: 1rem;
-  padding: 1.5rem;
-  max-width: 400px;
-  margin: 4rem auto 1rem;
-  font-family: 'Quicksand', sans-serif;
+  color: #F8F7F5;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: left;
+  order: 1;
 }
 
-.rsvp-music-box h3 {
-  font-size: 1.8rem;
-  font-family: 'Great Vibes', cursive;
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.rsvp-music-box p {
-  text-align: center;
+.rsvp-right-box {
+  background-color: #1a4f80;
+  color: #F8F7F5;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
   margin-bottom: 1rem;
-  font-size: 0.85rem;
-}
-
-.rsvp-music-box input[type="text"] {
-  width: 100%;
+  padding-left: 4rem;
+  text-align: left;
+  margin-top: 4rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
-  font-family: 'Quicksand', sans-serif;
+  order: 2; /* sorgt für Position rechts bei normalem Fluss */
+  align-self: flex-start;
+  width: 53%;
 }
 
-.note {
-  text-align: right;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
-  color: #123456;
-}
+@media (max-width: 768px) {
+  .rsvp-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-.rsvp-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  margin-top: 3rem;
+  .rsvp-info-box, .rsvp-right-box {
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .rsvp-info-box h3 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 }
 
 .rsvp-banner {
   position: relative;
-  top: -60px; /* überlappt leicht mit dem FAQ-Hintergrund */
+  top: -50%; /* überlappt leicht mit dem FAQ-Hintergrund */
   width: 100%;
-  display: flex;
   justify-content: center;
   z-index: 2;
+  width: 44.5%;
+  margin-left: 55.5%;  
+  margin-top: -10%;
+  height: 30%;
+}
+.rsvp-banner-blue {
+  position: relative;
+  top: 8%; /* überlappt leicht mit dem FAQ-Hintergrund */
+  width: 100%;
+  justify-content: center;
+  z-index: 2;
+  margin-top: 0%;
+  height: 30%;
+  background-color: #003E6C;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
 }
 
 .rsvp-banner-inner {
@@ -677,20 +694,18 @@
   padding: 20px 80px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   background-color: #003E6C;
-  transform: translateY(-50%);
-  width: 50%;
-  margin-left: 56%;  
-  margin-top: -3%;
-  height: 5%;
+  text-align: center;
 }
-
 .rsvp-banner-inner h2 {
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #F8F7F5;
   margin: 0;
-  text-align: center;
-  text-decoration: underline;
+  padding-top: 10px;
+  padding-bottom: 0px;           /* Abstand zum Strich */
+  /*border-bottom: 1px solid #F8F7F5; /* Statt underline */
+  display: inline-block;
+  letter-spacing: 6px;
 }
 
 
@@ -752,4 +767,92 @@
   }
 }
 
-  
+.musik-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #3f6c8d 50%, #003E6C 50%);
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.musik-wrapper {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.musik-box-outer {
+  background-image: url('../Images/fliesen.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 60px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.musik-box-inner {
+  background: white;
+  border-radius: 40px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.musik-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin: 0;
+  color: #003E6C;
+}
+
+.musik-subtitle {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: #003E6C;
+  letter-spacing: 1px;
+}
+
+.musik-box-inner label {
+  font-weight: 600;
+  color: #003E6C;
+  display: block;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.musik-box-inner input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #003E6C;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  color: #003E6C;
+  background: transparent;
+}
+
+.musik-note {
+  font-size: 0.8rem;
+  color: #003E6C;
+  text-align: left;
+  margin-top: 0;
+}
+
+.musik-box-inner button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #003E6C;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.musik-box-inner button:hover {
+  background-color: #1a4f80;
+}
