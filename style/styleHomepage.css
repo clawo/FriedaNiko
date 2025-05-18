@@ -407,280 +407,349 @@
 
   /* FAQ Section */
  /* === FAQ SECTION === */
-.faq-section {
-    position: relative;
-    background-color: #F8F7F5;
-    padding: 80px 5% 0;
-    overflow: hidden;
-    z-index: 0;
-  }
-  
+ .faq-section {
+  position: relative;
+  background-color: var(--background-color);
+  padding: 60px 5% 100px; /* genug Platz unten für Überlappung */
+  overflow: visible;
+  z-index: 1;
+}
+
+
+.faq-title {
+  font-size: 13rem;
+  font-weight: 800;
+  background: url('../Images/fliesen.png') no-repeat center center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  margin: -5% 0 30px;
+  z-index: 2;
+  position: relative;
+}
+
+.faq-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #003E6C;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-button {
+  background-color: #003E6C;
+  color: white;
+  padding: 20px;
+  font-size: 1rem;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.accordion-button::after {
+  content: '\25BE';
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s;
+}
+
+.accordion-button.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background: white;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content.open {
+  padding: 20px;
+}
+
+.color-palette {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.faq-background-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: calc(100% + 120px); /* nur leicht überlappend */
+  background-image: url('../Images/fliesen.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  z-index: 1;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  pointer-events: none; /* wichtig: kein Einfluss auf Klickverhalten */
+}
+
+
+.faq-info {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  width: 30%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.faq-info h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #F8F7F5;
+}
+
+.faq-info p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #F8F7F5;
+}
+
+/* === RSVP SECTION === */
+#rsvp {
+  background-color: #2a4d6f;
+  color: white;
+  padding: 8rem 5% 3rem;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.rsvp-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.rsvp-title-box {
+  position: absolute;
+  top: -3rem;
+  right: 10%;
+  background-image: url('../Images/fliesen.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: 25px 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rsvp-title-box h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.rsvp-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.rsvp-column {
+  flex: 1 1 400px;
+  background-color: #123456;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.rsvp-column h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.rsvp-info-column {
+  flex: 1 1 400px;
+  padding: 2rem;
+}
+
+.rsvp-info-column ol {
+  padding-left: 1.2rem;
+}
+
+.rsvp-music-box {
+  background-color: white;
+  color: #123456;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 400px;
+  margin: 4rem auto 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.rsvp-music-box h3 {
+  font-size: 1.8rem;
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.rsvp-music-box p {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.rsvp-music-box input[type="text"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.note {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #123456;
+}
+
+.rsvp-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
+
+.rsvp-banner {
+  position: relative;
+  top: -60px; /* überlappt leicht mit dem FAQ-Hintergrund */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.rsvp-banner-inner {
+  background-image: url('../Images/fliesen.png');
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 20px 80px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #003E6C;
+  transform: translateY(-50%);
+  width: 50%;
+  margin-left: 56%;  
+  margin-top: -3%;
+  height: 5%;
+}
+
+.rsvp-banner-inner h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #F8F7F5;
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
   .faq-title {
-    font-size: 13rem;
-    font-weight: 800;
-    background: url('../Images/fliesen.png') no-repeat center center;
-    background-size: cover;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Quicksand', sans-serif;
-    margin: -5% 0 30px;
-    z-index: 2;
-    position: relative;
+    font-size: 5rem;
   }
-  
-  .faq-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .accordion {
-    background-color: #003E6C;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .accordion-item {
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .accordion-button {
-    background-color: #003E6C;
-    color: white;
-    padding: 20px;
-    font-size: 1rem;
-    text-align: left;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    position: relative;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .accordion-button::after {
-    content: '\25BE';
-    position: absolute;
-    right: 20px;
-    transition: transform 0.3s;
-  }
-  
-  .accordion-button.active::after {
-    transform: rotate(180deg);
-  }
-  
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    background: white;
-    transition: max-height 0.3s ease;
-  }
-  
-  .accordion-content.open {
-    padding: 20px;
-  }
-  
-  .color-palette {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .swatch {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-  }
-  
-  /* Rechte durchgezogene Hintergrundbox */
-  .faq-background-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 130%;
-    background-image: url('../Images/fliesen.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
-    z-index: 1;
-    margin-right: 5%;
-    pointer-events: none;
-  }
-  
+
   .faq-info {
-    position: absolute;
-    top: 10%;
-    right: 8%;
-    width: 30%;
-    color: white;
-    text-align: center;
-    z-index: 2;
-  }
-  
-  .faq-info h3 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #F8F7F5;
-  }
-  
-  .faq-info p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #F8F7F5;
-  }
-  
-  /* === RSVP SECTION === */
-  #rsvp {
-    background-color: #2a4d6f;
-    color: white;
-    padding: 6rem 2rem 3rem;
-    font-family: 'Quicksand', sans-serif;
     position: relative;
-    overflow: hidden;
-    z-index: 2;
-  }
-  
-  .rsvp-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-  }
-  
-  .rsvp-title-box {
-    position: absolute;
-    top: -40px;
-    right: 10%;
-    background-image: url('../Images/fliesen.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
-    padding: 30px 50px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .rsvp-title-box h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2.8rem;
-    color: white;
-    margin: 0;
-    text-align: center;
-  }
-  
-  .rsvp-column {
-    flex: 1 1 400px;
-    background-color: #123456;
-    border-radius: 1rem;
-    padding: 2rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-  
-  .rsvp-column h3 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .rsvp-info-column {
-    flex: 1 1 400px;
-    padding: 2rem;
-  }
-  
-  .rsvp-info-column ol {
-    padding-left: 1.2rem;
-  }
-  
-  .rsvp-music-box {
-    background-color: white;
-    color: #123456;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    max-width: 400px;
-    margin: 4rem auto 1rem;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .rsvp-music-box h3 {
-    font-size: 1.8rem;
-    font-family: 'Great Vibes', cursive;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  .rsvp-music-box p {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
-  }
-  
-  .rsvp-music-box input[type="text"] {
     width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid #ccc;
-    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
   }
+
+    .faq-background-box {
+      display: none;
+    }
   
-  .note {
-    text-align: right;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    color: #123456;
+  
+
+  .rsvp-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .rsvp-footer {
+
+  .rsvp-title-box {
+    position: static;
+    margin-bottom: 30px;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 3.5rem;
+  }
+
+  .faq-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .faq-info p {
     font-size: 0.85rem;
-    margin-top: 3rem;
   }
-  
-  
-  @media (max-width: 768px) {
-    .faq-title {
-      font-size: 5rem; /* oder 4rem oder z.B. 12vw für flexible Breite */
-    }
+
+  .rsvp-title-box h2 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 480px) {
-    .faq-title {
-      font-size: 3.5rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .rsvp-banner-inner {
+    padding: 15px 40px;
   }
-  
-  @media (max-width: 768px) {
-    .faq-info h3 {
-      font-size: 1.5rem;
-      padding-top: 20px;
-    }
-  
-    .faq-info p {
-      font-size: 0.85rem;
-      padding-top: 5px;
-    }
+
+  .rsvp-banner-inner h2 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 480px) {
-    .faq-info h3 {
-      font-size: 1.2rem;
-      padding-top: 25px;
-    }
-  
-    .faq-info p {
-      font-size: 0.7rem;
-      padding-top: 2px;
-    }
-  }
-  
+}
+
   

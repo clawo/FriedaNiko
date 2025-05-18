@@ -163,8 +163,12 @@
   <div class="faq-background-box">
     <div class="faq-info">
       <h3>Alternative Unterkunft</h3>
-      <p>FALLS IHR LIEBER EXTERN ÜBERNACHTEN MÖCHTET, GEBT UNS BITTE RECHTZEITIG BESCHEID, DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.</p>
+      <p>
+        FALLS IHR LIEBER EXTERN ÜBERNACHTEN MÖCHTET, GEBT UNS BITTE RECHTZEITIG BESCHEID,
+        DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.
+      </p>
     </div>
+    <div class="faq-rsvp-heading">RSVP</div>
   </div>
 
   <div class="faq-content">
@@ -217,21 +221,11 @@
 </section>
 
 <section id="rsvp">
-  <div class="rsvp-container">
-    <h2 class="rsvp-title">Rsvp</h2>
-
-    <div class="rsvp-deadline-box">
-      <h3 class="rsvp-subtitle">Wann braucht ihr meine Rückmeldung?</h3>
-      <p>
-        Um unsere Hochzeit bestmöglich planen zu können und allen Dienstleistern
-        rechtzeitig verbindliche Informationen geben zu können, bitten wir euch,
-        uns so früh wie möglich Bescheid zu geben, ob ihr dabei sein könnt.
-        <br><br>
-        Wir benötigen eure Zu- oder Absage daher bis zum
-        <strong>01. September 2025</strong>.
-      </p>
-    </div>
-
+<div class="rsvp-banner">
+  <div class="rsvp-banner-inner">
+    <h2>Rsvp</h2>
+  </div>
+</div>
     <div class="rsvp-info">
       <p>Wir freuen uns, wenn ihr uns bei eurer Rückmeldung folgende Infos mitgebt:</p>
       <ol>
