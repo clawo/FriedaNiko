@@ -560,152 +560,88 @@
     }
   }
   
-  .rsvp-section {
-    background: linear-gradient(to bottom, #4d6d8a 60%, #003E6C 60%);
+  #rsvp {
+    background-color: #2a4d6f;
     color: white;
-    padding: 100px 5% 60px;
-    position: relative;
+    padding: 2rem;
+  }
+  
+  .rsvp-container {
+    max-width: 900px;
+    margin: auto;
     font-family: 'Quicksand', sans-serif;
   }
   
-  .rsvp-heading-box {
-    position: absolute;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: url('../Images/fliesen.png') center center / cover no-repeat;
-    border-radius: 30px;
-    padding: 20px 80px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    z-index: 10;
+  .rsvp-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
   }
   
-  .rsvp-heading-box h2 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    color: white;
-    margin: 0;
-  }
-  
-  .rsvp-info-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 80px;
-  }
-  
-  .rsvp-left,
-  .rsvp-right {
-    flex: 1 1 45%;
-  }
-  
-  .rsvp-left-box {
-    background-color: #1f3652;
-    padding: 30px;
-    border-radius: 40px;
+  .rsvp-deadline-box {
+    background-color: #123456;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
   
-  .rsvp-left-box h3 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
-    margin-bottom: 10px;
+  .rsvp-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Quicksand', sans-serif;
   }
   
-  .rsvp-left-box p,
-  .rsvp-right p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: white;
-  }
-  
-  .rsvp-right ul {
-    list-style: decimal;
-    padding-left: 20px;
+  .rsvp-info {
+    margin-bottom: 2rem;
     line-height: 1.6;
   }
   
-  .rsvp-music-card {
+  .rsvp-info ol {
+    padding-left: 1.5rem;
+  }
+  
+  .rsvp-music-box {
     background-color: white;
-    max-width: 400px;
-    margin: 60px auto 30px;
-    padding: 30px;
-    border-radius: 30px;
-    text-align: left;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    position: relative;
-    z-index: 2;
-    background-clip: padding-box;
+    color: #123456;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    font-family: 'Quicksand', sans-serif;
   }
   
-  .rsvp-music-card::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    border-radius: 40px;
-    background: url('../Images/fliesen.png') center center / cover no-repeat;
-    z-index: -1;
-  }
-  
-  .rsvp-music-card h4 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2rem;
-    color: #003E6C;
-    margin-bottom: 10px;
+  .rsvp-music-box h3 {
+    font-size: 1.5rem;
     text-align: center;
   }
   
-  .rsvp-music-card small {
-    display: block;
+  .rsvp-music-box p {
     text-align: center;
-    margin-bottom: 15px;
-    color: #555;
-    font-size: 0.8rem;
+    margin-bottom: 1rem;
   }
   
-  .rsvp-music-card input {
+  .rsvp-music-box input[type=\"text\"] {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #aaa;
-    margin-bottom: 20px;
-    padding: 5px;
-    font-size: 1rem;
-    background: transparent;
-    color: #003E6C;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-family: 'Quicksand', sans-serif;
   }
   
-  .rsvp-footer-note {
+  .note {
+    text-align: right;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .rsvp-footer {
     text-align: center;
+    margin-top: 2rem;
     font-size: 0.9rem;
-    margin-top: 30px;
-    color: white;
   }
   
-  @media (max-width: 768px) {
-    .rsvp-info-grid {
-      flex-direction: column;
-    }
   
-    .rsvp-left,
-    .rsvp-right {
-      flex: 1 1 100%;
-    }
-  
-    .rsvp-heading-box h2 {
-      font-size: 2.2rem;
-    }
-  
-    .rsvp-left-box h3 {
-      font-size: 1.5rem;
-    }
-  
-    .rsvp-music-card {
-      margin-top: 30px;
-    }
-  }
   
    
