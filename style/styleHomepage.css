@@ -409,7 +409,12 @@
  /* === FAQ SECTION === */
  .faq-section {
   position: relative;
-  background-color: var(--background-color);
+  background: linear-gradient(to bottom,
+    #F8F7F5 23%,
+    #1a4f80 100%
+  );
+  
+  /*background-color: var(--background-color);*/
   padding: 60px 5% 100px; /* genug Platz unten für Überlappung */
   overflow: visible;
   z-index: 1;
@@ -503,7 +508,7 @@
   top: 0;
   right: 0;
   width: 40%;
-  height: calc(100% + 120px); /* nur leicht überlappend */
+  height: calc(100% + 10%); /* nur leicht überlappend */
   background-image: url('../Images/fliesen.png');
   background-size: cover;
   background-position: center;
@@ -549,7 +554,7 @@
   font-family: 'Quicksand', sans-serif;
   position: relative;
   overflow: hidden;
-  z-index: 2;
+  z-index: -1;
 }
 
 .rsvp-container {

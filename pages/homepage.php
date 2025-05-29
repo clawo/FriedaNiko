@@ -220,13 +220,6 @@
 </section>
 
 <section id="rsvp">
-<div class="rsvp-banner">
-  <div class="rsvp-banner-inner">
-    <div class="rsvp-banner-blue">
-      <h2>Rsvp</h2>
-    </div>
-  </div>
-</div>
 <div class="rsvp-content-wrapper">
   <div class="rsvp-info-box">
     <h3 class="rsvp-column h3">Wann braucht ihr meine Rückmeldung?</h3>
