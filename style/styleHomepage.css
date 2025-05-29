@@ -410,8 +410,8 @@
  .faq-section {
   position: relative;
   background: linear-gradient(to bottom,
-    #F8F7F5 23%,
-    #1a4f80 100%
+    #F8F7F5 90%,
+    #1a4f80 10%
   );
   
   /*background-color: var(--background-color);*/
