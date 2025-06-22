@@ -409,11 +409,11 @@
  /* === FAQ SECTION === */
  .faq-section {
   position: relative;
-  background: linear-gradient(to bottom,
+  /*background: linear-gradient(to bottom,
     #F8F7F5 90%,
     #1a4f80 10%
   );
-  /*background-color: var(--background-color);*/
+  background-color: var(--background-color);*/
   padding: 0px 0% 5%; /* genug Platz unten für Überlappung */
   overflow: visible;
   z-index: 1;
@@ -525,11 +525,13 @@
 .faq-info {
   position: absolute;
   top: 0%;
-  right: 8%;
-  width: 30%;
-  color: white;
-  text-align: left;
+  right: 1%;
+  width: 80%;
+  text-align: center;
   z-index: 2;
+  background-color: #003E6C;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
 }
 
 .faq-info h3 {
