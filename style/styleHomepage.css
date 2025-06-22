@@ -413,9 +413,8 @@
     #F8F7F5 90%,
     #1a4f80 10%
   );
-  
   /*background-color: var(--background-color);*/
-  padding: 60px 5% 100px; /* genug Platz unten für Überlappung */
+  padding: 0px 0% 0px; /* genug Platz unten für Überlappung */
   overflow: visible;
   z-index: 1;
 }
@@ -525,7 +524,7 @@
 
 .faq-info {
   position: absolute;
-  top: 10%;
+  top: 0%;
   right: 8%;
   width: 30%;
   color: white;
