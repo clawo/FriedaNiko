@@ -176,9 +176,9 @@
       <div class="accordion-item">
         <button class="accordion-button">DRESSCODE?</button>
         <div class="accordion-content">
-          <p>WIR FREUEN UNS SEHR, UNSERE FAMILIE UND FREUNDE AN UNSEREM GROSSEN TAG FESTLICH GEKLEIDET ZU SEHEN.</p>
-          <p>DA UNSERE FEIER DRAUSSEN STATTFINDET, WÜNSCHEN WIR UNS EINEN SOMMERLICH-FESTLICHEN DRESSCODE – SCHICK, ABER DEM WETTER UND DER ENTSPANNTEN ATMOSPHÄRE ENTSPRECHEND. BITTE VERMEIDET ALL-WHITE ODER ALL-BLACK OUTFITS.</p>
-          <p>WENN IHR EUCH FARBLICH INSPIRIEREN LASSEN MÖCHTET:</p>
+          <p>Wir freuen uns sehr, unsere Familie und Freunde an unserem großen Tag festlich gekleidet zu sehen.</p>
+          <p>Da unsere Feier draußen stattfindet, wünschen wir uns einen sommerlich-festlichen Dresscode. Bitte vermeidet All-White oder All-Black Outfits.</p>
+          <p>Wenn ihr euch farblich inspirieren lassen möchtet:</p>
           <div class="color-palette">
             <span class="swatch" style="background:#C4D6B0"></span>
             <span class="swatch" style="background:#1F4662"></span>
