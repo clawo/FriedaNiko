@@ -20,10 +20,10 @@
 
 <section class="hero">
     <div class="image-row">
-      <img src="../Images/Bild1.png" alt="Bild 1" />
-      <img src="../Images/Bild2.png" alt="Bild 2" />
-      <img src="../Images/Bild3.png" alt="Bild 3" />
-      <img src="../Images/Bild4.png" alt="Bild 4" />
+      <img src="../Images/Foto 1.png" alt="Bild 1" />
+      <img src="../Images/Foto 2.png" alt="Bild 2" />
+      <img src="../Images/Foto 3.png" alt="Bild 3" />
+      <img src="../Images/Foto 4.png" alt="Bild 4" />
     </div>
     <div class="overlay-text">Wir heiraten!</div>
     <div class="date-text">02.06.2026</div>
