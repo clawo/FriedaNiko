@@ -144,9 +144,9 @@
 
       <div class="unterkunft-text">
         <p>
-          DAMIT ALLE VON EUCH MIT UNS FEIERN KÖNNEN, HABEN WIR UNS ENTSCHIEDEN, DIE KOSTEN FÜR DIE UNTERKUNFT NICHT FEST ZU BERECHNEN, SONDERN AUF FREIWILLIGER BASIS ANZUBIETEN.
+        Damit alle von euch mit uns feiern können, haben wir uns entschieden, DIE KOSTEN FÜR die Unterkunft nicht fest zu berechnen, sondern zu übernehmen und auf freiwilliger Basis anzubieten.
         </p>
-        <p><strong>ALS GROBE ORIENTIERUNG: DIE DREI ÜBERNACHTUNGEN KOSTEN UNS ETWA 185 € PRO GAST.</strong></p>
+        <p>ALS GROBE ORIENTIERUNG: DIE DREI ÜBERNACHTUNGEN KOSTEN UNS ETWA 185 € PRO GAST.</p>
         <p>
           DAS IST NATÜRLICH KEIN PFLICHTBETRAG, SONDERN EINFACH EIN RICHTWERT. WENN IHR UNS UNTERSTÜTZEN MÖCHTET, ABER NICHT GENAU WISST, WIE VIEL – FÜHLT EUCH BITTE VÖLLIG FREI, DAS ZU GEBEN, WAS FÜR EUCH MACHBAR IST. AUCH EIN KLEINERER BEITRAG IST ABSOLUT WILLKOMMEN.
         </p>
@@ -230,9 +230,11 @@
       </div>
       <div class="rsvp-right-box">
         <p>WIR FREUEN UNS WENN IHR UNS BEI EURER RÜCKMELDUNG FOLGENDE INFOS MITGEBT:</p>
-          <p>1. ERNÄHRUNGSPRÄFERENZEN – KEINE, VEGETARISCH, VEGAN
-            2. ALLERGIEN ODER UNVERTRÄGLICHKEITEN – FALLS VORHANDEN</p>
-          
+        <p></p>
+          <p>1. ERNÄHRUNGSPRÄFERENZEN – KEINE, VEGETARISCH, VEGAN </p>
+          <br>
+            <p>2. ALLERGIEN ODER UNVERTRÄGLICHKEITEN – FALLS VORHANDEN</p>
+            <br>
         <p>GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
       </div>
     </div>
