@@ -19,11 +19,11 @@
   <div class="logo">Niko &amp; Frieda</div>
     <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
     <nav id="nav-menu">
-      <a href="#">HOME</a>
-      <a href="#">ANREISE</a>
-      <a href="#">UNTERKUNFT</a>
-      <a href="#">FAQ</a>
-      <a href="#">RSVP</a>
+      <a href="#home">HOME</a>
+      <a href="#anreise">ANREISE</a>
+      <a href="#unterkunft">UNTERKUNFT</a>
+      <a href="#faq">FAQ</a>
+      <a href="#rsvp">RSVP</a>
     </nav>
 
     <script src="functions.js"></script>

@@ -18,7 +18,7 @@
 
 <body>
 
-<section class="hero">
+<section id="home" class="hero">
     <div class="image-row">
       <img src="../Images/Foto 1.png" alt="Bild 1" />
       <img src="../Images/Foto 2.png" alt="Bild 2" />
@@ -40,7 +40,7 @@
       <p class="bis-text">bis</p>
       <p class="date-large">04. Juni 2026</p>
     </div>
-
+    <div class="vertical-divider"></div>
     <div class="location-address">
       <h2 class="location-title">Location</h2>
       <p>
@@ -55,7 +55,7 @@
   </div>
 </section>
 
-<section class="anreise-section">
+<section id="anreise" class="anreise-section">
   <!-- HELLBLAU OBEN -->
   <div class="anreise-hellblau">
     <div class="anreise-wrapper">
@@ -125,7 +125,7 @@
   </div>
 </section>
 
-<section class="unterkunft-section">
+<section id="unterkunft" class="unterkunft-section">
   <div class="unterkunft-wrapper">
 
     <div class="unterkunft-bild-wrapper">
@@ -159,7 +159,7 @@
 
 <!-- SECTION: FAQ -->
 <!-- FAQ Section -->
-<section class="faq-section">
+<section id="faq" class="faq-section">
   <div class="faq-background-box">
     <div class="faq-info">
       <h3>Alternative Unterkunft</h3>
@@ -168,6 +168,7 @@
         DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.
       </p>
     </div>
+    <div class="faq-rsvp"> <h2>RSVP</h2></div>
   </div>
 
   <div class="faq-content">
@@ -264,7 +265,7 @@
 </section>
 
 
-
+<button id="scrollToTopBtn" aria-label="Nach oben scrollen">↑ Nach oben</button>
 
 </body>
 <script src="../Includes/functions.js"></script>
