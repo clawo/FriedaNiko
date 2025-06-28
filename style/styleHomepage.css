@@ -690,22 +690,6 @@
   width: 53%;
 }
 
-@media (max-width: 768px) {
-  .rsvp-content-wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .rsvp-info-box, .rsvp-right-box {
-    padding: 1.5rem;
-    text-align: left;
-  }
-
-  .rsvp-info-box h3 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-}
 
 .rsvp-banner {
   position: relative;
@@ -756,63 +740,7 @@
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-  .faq-title {
-    font-size: 5rem;
-  }
 
-  .faq-info {
-    position: relative;
-    width: 100%;
-    margin-top: 30px;
-  }
-
-    .faq-background-box {
-      display: none;
-    }
-  
-  
-
-  .rsvp-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .rsvp-title-box {
-    position: static;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .faq-title {
-    font-size: 3.5rem;
-  }
-
-  .faq-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .faq-info p {
-    font-size: 0.85rem;
-  }
-
-  .rsvp-title-box h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .rsvp-banner-inner {
-    padding: 15px 40px;
-  }
-
-  .rsvp-banner-inner h2 {
-    font-size: 2rem;
-  }
-}
 
 .musik-section {
   display: flex;
