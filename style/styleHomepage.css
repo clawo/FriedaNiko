@@ -544,7 +544,7 @@
   top: 2%;
   right: 1%;
   left: 5%;
-  width: 90%;
+  width: 95%;
   height: 20%;
   padding: 7%;
   text-align: center;
@@ -927,3 +927,152 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* === FAQ Responsive Optimierungen === */
+/* === FAQ Responsive – komplett === */
+
+@media (max-width: 1024px) {
+  .faq-title {
+    font-size: 8rem;
+  }
+
+  .faq-info {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .faq-background-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    margin: 20px 0;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    z-index: 0;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: none; /* damit Inhalte nicht blockieren */
+  }
+
+  .faq-info {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1;
+    padding: 5%;
+    background-color: #003E6C;
+  }
+
+  .faq-info h3 {
+    font-size: 1.4rem;
+    color: #F8F7F5;
+  }
+
+  .faq-info p {
+    font-size: 0.85rem;
+    color: #F8F7F5;
+  }
+
+  .accordion-button {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .accordion-content {
+    padding: 15px;
+  }
+
+  .faq-rsvp {
+    font-size: 1.8rem;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    font-size: 3.5rem;
+  }
+
+  .faq-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .faq-info p {
+    font-size: 0.8rem;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .accordion-content {
+    padding: 12px;
+  }
+
+  .faq-rsvp {
+    font-size: 1.6rem;
+  }
+
+  .faq-background-box {
+    min-height: 120px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rsvp-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  .rsvp-info-box,
+  .rsvp-right-box {
+    width: 90%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .rsvp-info-box {
+    margin-top: 100px; /* Abstand zum darüberliegenden Banner */
+    order: 1;
+  }
+
+  .rsvp-right-box {
+    margin-top: 0;
+    order: 2;
+  }
+}
+.rsvp-info-box { order: 1; }
+.rsvp-right-box { order: 2; }
+
+@media (max-width: 768px) {
+  .rsvp-column {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+

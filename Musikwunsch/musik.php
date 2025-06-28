@@ -5,8 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $to = "clara131@gmx.de";
     $subject = "Neuer Musikwunsch";
-    $headers = "From: website@deinedomain.de\r\n";
-    $headers .= "Reply-To: website@deinedomain.de\r\n";
+    $headers = "From: clara131@gmx.de\r\n";
+    $headers .= "Reply-To: clara131@gmx.de\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
     $message = "Neuer Musikwunsch erhalten:\n\n";

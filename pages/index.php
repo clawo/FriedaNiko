@@ -10,11 +10,25 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style/styleHeader.css" />
+  <link rel="stylesheet" href="../style/styleHeader.css" />
   <link rel="stylesheet" href="../style/styleHomepage.css"/>
 <!-- Header -->
-  <?php include '../Includes/header.php'; ?>
+  
 </head>
+
+<header>
+<div class="logo">Niko &amp; Frieda</div>
+    <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+    <nav id="nav-menu">
+      <a href="#home">HOME</a>
+      <a href="#anreise">ANREISE</a>
+      <a href="#unterkunft">UNTERKUNFT</a>
+      <a href="#faq">FAQ</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+
+    
+</header>
 
 <body>
 
