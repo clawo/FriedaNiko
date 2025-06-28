@@ -16,6 +16,9 @@
   
 </head>
 
+
+<body>
+
 <header>
 <div class="logo">Niko &amp; Frieda</div>
     <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
@@ -29,8 +32,6 @@
 
     
 </header>
-
-<body>
 
 <section id="home" class="hero">
     <div class="image-row">
