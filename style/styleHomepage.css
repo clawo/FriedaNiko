@@ -75,24 +75,36 @@ html {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .location-container {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
-  gap: 40px;
-  max-width: 900px;
+  gap: 1vh;
+  max-width: 50%;
   border: 1px solid #F8F7F5;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 40px;
+  padding: 4vh;
   background-color: var(--primary-light);
 }
 
+@media (max-width: 768px) {
+  .location-container {
+    display:inline-block;
+    max-width: 80%;
+    gap: 3vh;
+  }
+}
+
+
 .location-dates,
 .location-address {
-  flex: 1 1 300px;
+  flex: 1 1 10vh;
+
+  
 }
 .vertical-divider {
   width: 1px;
@@ -285,7 +297,7 @@ width: 100%;
 
 .anreise-block h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 2vh;
 }
 
 .anreise-block ul {
@@ -320,31 +332,40 @@ width: 100%;
   .location-container {
     flex-direction: column;
     align-items: center;
+    gap: 3vh;
+    padding: 5vh;
   }
 
   .location-dates,
   .location-address {
     text-align: center;
+    padding-bottom: 4vh;
   }
 
   .anreise-top {
     flex-direction: column;
     align-items: center;
+    padding-top: 2vh;
   }
 
   .karte-hintergrund,
   .anreise-image {
-    max-width: 100%;
+    max-width: 80%;
     min-height: unset;
   }
 
   .anreise-details {
     flex-direction: column;
     align-items: center;
+    padding-top: 1vh;
   }
 
   .anreise-block {
     text-align: center;
+  }
+
+  .anreise-info {
+    padding-top: 2vh;
   }
 }
 
@@ -372,9 +393,24 @@ width: 100%;
   z-index: 2;
 }
 
+@media (max-width: 450px) {
+  .unterkunft-bild-wrapper {
+    position: static;
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+  
+  }
+  
+
+  .unterkunft-section {
+  padding-top: 5vh;
+  }
+
+
 .unterkunft-bild {
   width: 100%;
-  border-radius: 100px;
+  border-radius: 35%;
 }
 
 .unterkunft-inhalt {
@@ -418,17 +454,7 @@ width: 100%;
   text-align: left;
 }
 
-@media (max-width: 768px) {
-  .unterkunft-bild-wrapper {
-    position: static;
-    width: 100%;
-    margin-bottom: 20px;
-  }
 
-  .unterkunft-bild {
-    border-radius: 30px;
-  }
-}
 
 /* FAQ Section */
 /* === FAQ SECTION === */
