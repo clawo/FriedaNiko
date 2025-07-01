@@ -247,7 +247,7 @@ width: 100%;
 
 .anreise-image {
   flex: 1 1 50%;
-  max-width: 50%;
+  max-width: 51%;
   height: 100%;
   box-sizing: border-box;
   padding-left: 2%;
@@ -350,7 +350,7 @@ width: 100%;
 
   .karte-hintergrund,
   .anreise-image {
-    max-width: 80%;
+    max-width: 85%;
     min-height: unset;
   }
 
@@ -366,6 +366,10 @@ width: 100%;
 
   .anreise-info {
     padding-top: 2vh;
+  }
+
+  .anreise-image {
+    padding-left: 0%;
   }
 }
 
