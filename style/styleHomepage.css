@@ -391,7 +391,7 @@ width: 100%;
 
 .unterkunft-bild-wrapper {
   position: absolute;
-  top: -47%; /* schiebt das Bild nach oben in die Anreise-Section */
+  top: -37vh; /* schiebt das Bild nach oben in die Anreise-Section */
   right: 0;
   width: 48%;
   z-index: 2;
@@ -418,7 +418,7 @@ width: 100%;
 }
 
 .unterkunft-inhalt {
-  margin-top: -5%;
+  margin-top: 0%;
   text-align: left;
   color: var(--primary-color);
   padding-left: 7%;
