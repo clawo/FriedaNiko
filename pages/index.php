@@ -250,7 +250,7 @@
           <br>
             <p>2. ALLERGIEN ODER UNVERTRÄGLICHKEITEN – FALLS VORHANDEN</p>
             <br>
-        <p>GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
+        <p>3. GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
       </div>
     </div>
 </section>
