@@ -50,7 +50,9 @@ html {
 @media (max-width: 450px) {
   .overlay-text {
     font-size: 6vh;
-  }
+    align-self: center;
+    margin-bottom: 5vh;
+	margin-top: -5vh;
 }
 
 .date-text {
@@ -391,7 +393,7 @@ width: 100%;
 
 .unterkunft-bild-wrapper {
   position: absolute;
-  top: -37vh; /* schiebt das Bild nach oben in die Anreise-Section */
+  top: -25vh; /* schiebt das Bild nach oben in die Anreise-Section */
   right: 0;
   width: 48%;
   z-index: 2;
@@ -711,21 +713,21 @@ order: 1;
 }
 
 .rsvp-right-box {
-background-color: #1a4f80;
-color: #F8F7F5;
-border-radius: 1rem;
-padding: 2rem 2.5rem;
-text-align: left;
-font-size: 1rem;
-line-height: 1.8;
-margin-bottom: 1rem;
-padding-left: 4rem;
-text-align: left;
-margin-top: 4rem;
-margin-bottom: 1rem;
-order: 2; /* sorgt für Position rechts bei normalem Fluss */
-align-self: flex-start;
-width: 53%;
+  background-color: #1a4f80;
+  color: #F8F7F5;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  padding-left: 4rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  order: 2;
+  align-self: flex-start;
+  width: 53%;
+  position: relative;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
@@ -800,16 +802,28 @@ letter-spacing: 6px;
   font-size: 5rem;
 }
 
-.faq-info {
-  position: relative;
-  width: 100%;
-  margin-top: 30px;
-}
 
-  .faq-background-box {
+.faq-background-box {
     display: none;
-  }
-
+}
+  
+  
+.faq-info {
+top: 2%;
+right: 1%;
+left: 5%;
+width: 90%;
+height: 20%;
+padding: 7%;
+text-align: center;
+z-index: 2;
+background-color: #003E6C;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+  
 
 
 .rsvp-container {
@@ -841,6 +855,7 @@ letter-spacing: 6px;
   font-size: 2rem;
 }
 }
+
 
 @media (max-width: 768px) {
 .rsvp-banner-inner {
@@ -965,7 +980,7 @@ z-index: 1000;
 opacity: 1;
 visibility: visible;
 }
-
+}
 /* === FAQ Responsive – komplett === */
 
 @media (max-width: 1024px) {
