@@ -34,8 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POS
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style/styleHeader.css" />
-  <link rel="stylesheet" href="style/styleHomepage.css"/>
+  <link rel="stylesheet" href="../style/styleHeader.css" />
+  <link rel="stylesheet" href="../style/styleHomepage.css"/>
 <!-- Header -->
   <?php include './Includes/header.php'; ?>
 </head>
