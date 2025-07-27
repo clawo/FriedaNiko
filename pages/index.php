@@ -1,3 +1,27 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POST["artist"])) {
+    $song = strip_tags(trim($_POST["song"]));
+    $artist = strip_tags(trim($_POST["artist"]));
+
+    $to = "frieda1999@gmx.de"; // Zieladresse
+    $subject = "Neuer Musikwunsch";
+    $headers = "From: website@deinedomain.de\r\n";
+    $headers .= "Reply-To: website@deinedomain.de\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+
+    $message = "Neuer Musikwunsch erhalten:\n\n";
+    $message .= "🎵 Song: " . $song . "\n";
+    $message .= "👤 Artist: " . $artist . "\n";
+
+    if (mail($to, $subject, $message, $headers)) {
+        header("Location: " . strtok($_SERVER['REQUEST_URI'], '?') . "?success=1");
+        exit();
+    } else {
+        $error = "Fehler beim Senden. Bitte versuche es erneut.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -10,16 +34,15 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../style/styleHeader.css" />
-  <link rel="stylesheet" href="../style/styleHomepage.css"/>
+  <link rel="stylesheet" href="style/styleHeader.css" />
+  <link rel="stylesheet" href="style/styleHomepage.css"/>
 <!-- Header -->
-  
+  <?php include './Includes/header.php'; ?>
 </head>
+  
+ <header> 
 
-
-<body>
-<header>
-<div class="logo">Niko &amp; Frieda</div>
+  <div class="logo">Niko &amp; Frieda</div>
     <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
     <nav id="nav-menu">
       <a href="#home">HOME</a>
@@ -29,8 +52,11 @@
       <a href="#rsvp">RSVP</a>
     </nav>
 
+    <script src="functions.js"></script>
     
-</header>
+  </header>
+
+<body>
 
 <section id="home" class="hero">
     <div class="image-row">
@@ -105,34 +131,34 @@
   <div class="anreise-dunkelblau">
     <div class="anreise-wrapper">
       <div class="anreise-info">
-        <h2 class="anreise-title">Anreise</h2>
+        <h2 class="anreise-title">ANREISE</h2>
         <p class="anreise-subtitle">
-          Für die Anreise gibt es mehrere Möglichkeiten. Ihr könnt über die Flughäfen<br>
-          Girona oder Barcelona anreisen.
+          FÜR DIE ANREISE GIBT ES MEHRERE MÖGLICHKEITEN. IHR KÖNNT ÜBER DIE FLUGHÄFEN <br>
+          GIRONA ODER BARCELONA ANREISEN
         </p>
 
         <div class="anreise-details">
           <div class="anreise-block">
-            <h3>Von Girona:</h3>
+            <h3>VON GIRONA:</h3>
             <ul>
-              <li>Mit dem Auto oder Taxi – ca. 30 Minuten</li>
-              <li>Mit dem Bus (2× Umsteigen) + Taxi – ca. 1,5 Stunden</li>
+              <li>MIT DEM AUTO ODER TAXI - CA. 30 MIN</li>
+              <li>MIT DEM BUS (2X UMSTEIGEN) + TAXI - CA. 1,5 </li>
             </ul>
           </div>
           <div class="anreise-block">
-            <h3>Von Barcelona:</h3>
+            <h3>VON BARCELONA:</h3>
             <ul>
-              <li>Mit dem Auto oder Taxi – ca. 1,5 Stunden</li>
-              <li>Mit dem Bus – ca. 2 Stunden</li>
+              <li>MIT DEM AUTO ODER TAXI - CA. 1,5 STUNDEN</li>
+              <li>MIT DEM BUS - CA. 2 STUNDEN</li>
             </ul>
           </div>
         </div>
 
         <p class="anreise-pdf-hinweis">
-  Alle Details findet ihr in der
+  ALLE DETAILS FINDET IHR IN DER 
   <a href="../PDF/Informationen zur Anreise.pdf" target="_blank" class="pdf-link">
-    PDF mit den Anreiseinfos
-  </a>.
+    PDF MIT DEN ANREISE INFOS.
+  </a>
 </p>
       </div>
     </div>
@@ -147,7 +173,7 @@
     </div>
 
     <div class="unterkunft-inhalt">
-      <h2 class="unterkunft-titel">Schlafplätze vor Ort</h2>
+      <h2 class="unterkunft-titel">SCHLAFPLÄTZE VOR ORT</h2>
       <div class="unterkunft-box">
         <p>
           UNSERE HOCHZEITSLOCATION STEHT UNS FÜR 3 NÄCHTE ZUR VERFÜGUNG, <strong>VOM 01.06.2026 BIS ZUM 04.06.2026</strong>.
@@ -160,7 +186,7 @@
         <p>
         Damit alle von euch mit uns feiern können, haben wir uns entschieden, DIE KOSTEN FÜR die Unterkunft nicht fest zu berechnen, sondern zu übernehmen und auf freiwilliger Basis anzubieten.
         </p>
-        <p>ALS GROBE ORIENTIERUNG: DIE DREI ÜBERNACHTUNGEN KOSTEN UNS ETWA 185 € PRO GAST.</p>
+        <p>ALS GROBE ORIENTIERUNG: DIE DREI ÜBERNACHTUNGEN KOSTEN UNS ETWA 185€ PRO GAST.</p>
         <p>
           DAS IST NATÜRLICH KEIN PFLICHTBETRAG, SONDERN EINFACH EIN RICHTWERT. WENN IHR UNS UNTERSTÜTZEN MÖCHTET, ABER NICHT GENAU WISST, WIE VIEL – FÜHLT EUCH BITTE VÖLLIG FREI, DAS ZU GEBEN, WAS FÜR EUCH MACHBAR IST. AUCH EIN KLEINERER BEITRAG IST ABSOLUT WILLKOMMEN.
         </p>
@@ -250,7 +276,7 @@
           <br>
             <p>2. ALLERGIEN ODER UNVERTRÄGLICHKEITEN – FALLS VORHANDEN</p>
             <br>
-        <p>3. GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
+        <p>GGF. UNTERKUNFT – FREIWILLIGEN BEITRAG</p>
       </div>
     </div>
 </section>
@@ -261,7 +287,7 @@
         <h2 class="musik-title">Musikwunsch</h2>
         <p class="musik-subtitle">FÜR DIE PARTY!*</p>
 
-        <form action="musikwunsch.php" method="POST">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
           <label for="song">Song:</label><br>
           <input type="text" id="song" name="song" required><br>
           <label for="artist">Artist:</label><br>
