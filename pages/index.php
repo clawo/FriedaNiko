@@ -184,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POS
 
       <div class="unterkunft-text">
         <p>
-        Damit alle von euch mit uns feiern können, haben wir uns entschieden, DIE KOSTEN FÜR die Unterkunft nicht fest zu berechnen, sondern zu übernehmen und auf freiwilliger Basis anzubieten.
+          DAMIT ALLE VON EUCH MIT UNS FEIERN KÖNNEN, HABEN WIR UNS ENTSCHIEDEN, DIE KOSTEN FÜR DIE UNTERKUNFT NICHT FEST ZU BERECHNEN, SONDERN ZU ÜBERNEHMEN UND AUF FREIWILLIGER BASIS ANZUBIETEN.
         </p>
         <p>ALS GROBE ORIENTIERUNG: DIE DREI ÜBERNACHTUNGEN KOSTEN UNS ETWA 185€ PRO GAST.</p>
         <p>
@@ -202,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POS
 <section id="faq" class="faq-section">
   <div class="faq-background-box">
     <div class="faq-info">
-      <h3>Alternative Unterkunft</h3>
+      <h3>ALTERNATIVE UNTERKUNFT</h3>
       <p>
         FALLS IHR LIEBER EXTERN ÜBERNACHTEN MÖCHTET, GEBT UNS BITTE RECHTZEITIG BESCHEID,
         DAMIT WIR ENTSPRECHEND PLANEN KÖNNEN.
@@ -217,9 +217,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POS
       <div class="accordion-item">
         <button class="accordion-button">DRESSCODE?</button>
         <div class="accordion-content">
-          <p>Wir freuen uns sehr, unsere Familie und Freunde an unserem großen Tag festlich gekleidet zu sehen.</p>
-          <p>Da unsere Feier draußen stattfindet, wünschen wir uns einen sommerlich-festlichen Dresscode. Bitte vermeidet All-White oder All-Black Outfits.</p>
-          <p>Wenn ihr euch farblich inspirieren lassen möchtet:</p>
+          <p>WIR FREUEN UND SEHR, UNSERE FAMILIE UND FREUNDE AN UNSEREM GROßEN TAG FESTLICH GEKLEIDET ZU SEHEN.</p>
+          <p>DA UNSERE FEIER DRAUßEN STATTFINDET, WÜNSCHEN WIR UND EINEN SOMMERLICH-FESTLICHEN DRESSCODE. BITTE VERMEIDET ALL-WHITE ODER ALL-BLACK OUTFITS.</p>
+          <p>WENN IHR EUCH FARBLICH INSPIRIEREN LASSEN MÖCHTET:</p>
           <div class="color-palette">
             <span class="swatch" style="background:#C4D6B0"></span>
             <span class="swatch" style="background:#1F4662"></span>
@@ -263,10 +263,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POS
 <section id="rsvp">
 <div class="rsvp-content-wrapper">
   <div class="rsvp-info-box">
-    <h3 class="rsvp-column h3">Wann braucht ihr meine Rückmeldung?</h3>
-    <p>Um unsere Hochzeit bestmöglich planen zu können und allen Dienstleistern rechtzeitig verbindliche Informationen geben zu können, bitten wir euch, uns so früh wie möglich Bescheid zu geben, ob ihr dabei sein könnt.</p>
+    <h3 class="rsvp-column h3">WANN BRUCHT IHR MEINE RÜCKMELDUNG?</h3>
+    <p>UM UNSERE HOCHZEIT BESTMÖGLICH PLANEN ZU KÖNNEN UND ALLEN DIENSTLEISTERN RECHTZEITIG VERBINDLICHE INFORMATIONEN GEBEN ZU KÖNNEN, BITTEN WIR EUCH, UNS SO FRÜH WIE MÖGLICH BESCHEID ZU GEBEN, OB IHR DABEI SEIN KÖNNT.</p>
     <br>
-    <p>Wir benötigen eure Zu- oder Absage daher bis zum <strong> 01. September 2025.</strong> </p>
+    <p>WIR BENÖTIGEN EURE ZU- ODER ABSAGE DAHER BIS ZUM <strong> 01. SEPTEMBER 2025.</strong> </p>
       
       </div>
       <div class="rsvp-right-box">
