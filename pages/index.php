@@ -40,23 +40,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["song"]) && isset($_POS
   <?php include './Includes/header.php'; ?>
 </head>
   
- <header> 
-
-  <div class="logo">Niko &amp; Frieda</div>
-    <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
-    <nav id="nav-menu">
-      <a href="#home">HOME</a>
-      <a href="#anreise">ANREISE</a>
-      <a href="#unterkunft">UNTERKUNFT</a>
-      <a href="#faq">FAQ</a>
-      <a href="#rsvp">RSVP</a>
-    </nav>
-
-    <script src="functions.js"></script>
-    
-  </header>
+ 
 
 <body>
+<header> 
+
+<div class="logo">Niko &amp; Frieda</div>
+  <button class="menu-toggle" aria-label="Menü öffnen">&#9776;</button>
+  <nav id="nav-menu">
+    <a href="#home">HOME</a>
+    <a href="#anreise">ANREISE</a>
+    <a href="#unterkunft">UNTERKUNFT</a>
+    <a href="#faq">FAQ</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+
+  <script src="functions.js"></script>
+  
+</header>
 
 <section id="home" class="hero">
     <div class="image-row">
