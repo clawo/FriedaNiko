@@ -335,7 +335,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["rsvp_submit"])) {
 <section id="rsvp">
 <div class="rsvp-content-wrapper">
 <div class="faq-rsvp-responsive">
-  <h1>RSVP</h1>
+  <h2>RSVP</h2>
 </div>
   <div class="rsvp-info-box">
     <h3 class="rsvp-column h3">Wann braucht ihr meine Rückmeldung?</h3>
